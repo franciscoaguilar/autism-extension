@@ -3,6 +3,10 @@
 .styling{
   color: $text-color;
   background-color: #1a9b47;
+  .tablinks{
+    text-align: left;
+
+  }
   .tab{
     width: 200px;
 
