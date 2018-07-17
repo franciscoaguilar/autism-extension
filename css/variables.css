@@ -1,0 +1,42 @@
+/*
+Error: Invalid CSS after "$font-tab-bkgrnd: ": expected expression (e.g. 1px, bold), was "# #CFFFCD;"
+        on line 5 of C:\Users\sage-\Documents\GitHub\autism-extension\sass\variables.scss
+
+1: //variables
+2: 
+3: //colors
+4: 
+5: $font-tab-bkgrnd: # #CFFFCD;
+6: $image-tab-bkgrnd:#C5FFB8;
+7: 
+8: 
+9: //text colors. Numbers are associated with colorSelectionBox values 1-4
+10: $text-color: #121900;
+
+Backtrace:
+C:\Users\sage-\Documents\GitHub\autism-extension\sass\variables.scss:5
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/lexer.rb:231:in `expected!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/parser.rb:724:in `assert_expr'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/script/parser.rb:68:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:1134:in `sass_script'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:642:in `variable'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.3/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:23:in `load'
+C:/Ruby24-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"$font-tab-bkgrnd: \": expected expression (e.g. 1px, bold), was \"# #CFFFCD;\"\A         on line 5 of C:\Users\sage-\Documents\GitHub\autism-extension\sass\variables.scss\A \A 1: //variables\A 2: \A 3: //colors\A 4: \A 5: $font-tab-bkgrnd: # #CFFFCD;\A 6: $image-tab-bkgrnd:#C5FFB8;\A 7: \A 8: \A 9: //text colors. Numbers are associated with colorSelectionBox values 1-4\A 10: $text-color: #121900;"; }
