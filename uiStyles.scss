@@ -1,0 +1,13 @@
+@import "variables";
+
+.styling{
+  color: $text-color;
+  background-color: #1a9b47;
+  .tab{
+    width: 200px;
+
+  }
+}
+.tabcontent{
+  margin: 10px;
+}
