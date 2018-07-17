@@ -1,17 +1,31 @@
 @import "variables";
 
-.styling{
-  color: $text-color;
-  background-color: #1a9b47;
-  .tablinks{
-    text-align: left;
+// universal item styling - buttons, menus
 
-  }
-  .tab{
-    width: 200px;
-
-  }
+button{
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
 }
+
+#fontSelectionBox{
+  width: 1330px;
+}
+
+// end universal styling
+
+.tab{
+  text-align: left;
+  padding: 10px;
+
+}
+
+.font{
+  font-size: 16px;
+}
+
+
 .tabcontent{
   margin: 10px;
+  font-size: 30px;
 }
