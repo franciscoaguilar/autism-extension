@@ -1,6 +1,5 @@
 @import "variables";
 
-// universal item styling - buttons, menus
 
 button{
   border-radius: 3px;
@@ -8,11 +7,9 @@ button{
   font-size: 16px;
 }
 
-#fontSelectionBox{
+.custom-select{
   width: 1330px;
 }
-
-// end universal styling
 
 .tab{
   text-align: left;

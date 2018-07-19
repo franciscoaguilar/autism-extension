@@ -3,7 +3,7 @@ button {
   padding: 5px;
   font-size: 16px; }
 
-#fontSelectionBox {
+.custom-select {
   width: 1330px; }
 
 .tab {
