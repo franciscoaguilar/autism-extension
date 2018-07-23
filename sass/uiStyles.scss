@@ -1,1 +1,28 @@
-@import "variables"
+@import "variables";
+
+
+button{
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.custom-select{
+  width: 1330px;
+}
+
+.tab{
+  text-align: left;
+  padding: 10px;
+
+}
+
+.font{
+  font-size: 16px;
+}
+
+
+.tabcontent{
+  margin: 10px;
+  font-size: 30px;
+}
