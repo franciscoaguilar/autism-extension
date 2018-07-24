@@ -12,13 +12,16 @@
 
 "page_action": {
  "default_popup": "popup.html",
- "default_icon": {}},
+ "default_icon": {}
+},
 
  "manifest_version": 2,
  "content_scripts": [
    {
    "js": ["console-log.js"],
-   "matches": ["http://*/*"]
+   "matches": ["https://*/*"],
+   "run_at": "document_start",
+   "all_frames": true
     }
   ]
   }
