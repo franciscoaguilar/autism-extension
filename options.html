@@ -11,50 +11,43 @@
   </head>
   <body>
     <div class="styling">
-      <div class="tab">
-        <button class="tablinks" onclick="openTab('change font')">Change font</button>
-        <button class="tablinks" onclick="openCity('change colors')">Change Colors</button>
-      </div>
-
-      <!-- Tab content -->
-        <div>
-          <div id="fontSize" class="tabcontent">
-            <div class="custom-select" style="width:200px;">
-              <select>
-                <option id="colorSelectionBox" value="0">Select Font Size:</option>
-                <option value="1">14</option>
-                <option value="2">16</option>
-                <option value="3">18</option>
-                <option value="4">20</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div id="fontColor" class="tabcontent">
-          <div class="custom-select" style="width:200px">
-            <select>
-              <option class="" value="0">select font color</option>
-              <option value="1">green black</option>
-              <option value="2">blue-black</option>
-              <option value="3">deep gray</option>
-              <!-- what other colors??? -->
-            </select>
-          </div>
-        </div>
-      </div>
-    </div>
-<!-- separate tab -->
-    <div>
-      <div id="Change Colors" class="tabcontent">
+      <!-- font size -->
+      <div id="fontSize">
         <div class="custom-select" style="width:200px;">
           <select>
-            <option id="colorSelectionBox" value="0">Select color change:</option>
-            <option value="1">Decrease saturation of images to 95%</option>
-            <option value="2">Decrease brightness of images to 95%</option>
+            <option id="colorSelectionBox" value="0">Select Font Size:</option>
+            <option value="1">14</option>
+            <option value="2">16</option>
+            <option value="3">18</option>
+            <option value="4">20</option>
           </select>
         </div>
       </div>
+      <!-- font color -->
+      <div id="fontColor">
+        <div class="custom-select" style="width:200px">
+          <select>
+            <option class="" value="0">select font color</option>
+            <option value="1">green black</option>
+            <option value="2">blue-black</option>
+            <option value="3">deep gray</option>
+            <!-- what other colors??? -->
+          </select>
+        </div>
+      </div>
+      <!-- end font color -->
+
+    <!-- color change -->
+    <div id="Change Colors">
+      <div class="custom-select" style="width:200px;">
+        <select>
+          <option id="colorSelectionBox" value="0">Select color change:</option>
+          <option value="1">Decrease saturation of images to 95%</option>
+          <option value="2">Decrease brightness of images to 95%</option>
+        </select>
+      </div>
     </div>
+    <!-- end cc -->
     </div>
 
   </body>
