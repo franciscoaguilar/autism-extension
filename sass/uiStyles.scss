@@ -7,10 +7,16 @@
 
 .styling{
   background-color: $background-color;
+  margin-top: 10px;
+  .option{
+    color: $text-color;
+    font-size: 16px;
+  }
+  .custom-select{
+    margin: 10px;
+    width: 1330px;
 
-  .select{
-    margin-bottom: 10px,
-    
+
   }
 }
 

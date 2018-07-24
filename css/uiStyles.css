@@ -1,6 +1,11 @@
 .styling {
-  background-color: #c9fcb5; }
-  .styling .select {
-    margin-bottom: 10px; }
+  background-color: #c9fcb5;
+  margin-top: 10px; }
+  .styling .option {
+    color: #121900;
+    font-size: 16px; }
+  .styling .custom-select {
+    margin: 10px;
+    width: 1330px; }
 
 /*# sourceMappingURL=uiStyles.css.map */
