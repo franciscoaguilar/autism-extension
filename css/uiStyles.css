@@ -2,13 +2,14 @@
   background-color: #c9fcb5;
   margin-top: 10px;
   height: 140px; }
-  .styling .option {
-    color: #121900;
-    font-size: 16px; }
+  .styling .custom-select {
+    color: #121900; }
   .styling select {
     margin: 10px 10px;
-    width: 145px;
-    border: 0px; }
+    width: 170px;
+    border: 0px;
+    font-size: 16px;
+    font: "Montserrat", sans-serif; }
   .styling option[value~="1"] {
     color: #121900; }
   .styling hr {

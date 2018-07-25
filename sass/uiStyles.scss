@@ -6,14 +6,17 @@
   margin-top: 10px;
   height: 140px;
 
-  .option{
+
+  .custom-select{
     color: $text-color;
-    font-size: 16px;
+
   }
   select{
     margin: 10px 10px;
-    width: 145px;
+    width: 170px;
     border: 0px;
+    font-size: 16px;
+    font: $font;
   }
 
   option[value~="1"]{
