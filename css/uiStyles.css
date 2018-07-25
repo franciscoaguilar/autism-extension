@@ -1,11 +1,14 @@
 .styling {
   background-color: #c9fcb5;
-  margin-top: 10px; }
+  margin-top: 10px;
+  height: 140px; }
   .styling .option {
     color: #121900;
     font-size: 16px; }
   .styling .custom-select {
-    margin: 10px;
-    width: 1330px; }
+    padding: 10px 10px; }
+  .styling hr {
+    height: 0;
+    border-style: ridge; }
 
 /*# sourceMappingURL=uiStyles.css.map */
