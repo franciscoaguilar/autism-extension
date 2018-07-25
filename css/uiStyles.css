@@ -5,8 +5,12 @@
   .styling .option {
     color: #121900;
     font-size: 16px; }
-  .styling .custom-select {
-    padding: 10px 10px; }
+  .styling select {
+    margin: 10px 10px;
+    width: 145px;
+    border: 0px; }
+  .styling option[value~="1"] {
+    color: #121900; }
   .styling hr {
     height: 0;
     border-style: ridge; }

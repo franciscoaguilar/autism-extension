@@ -10,9 +10,16 @@
     color: $text-color;
     font-size: 16px;
   }
-  .custom-select{
-    padding: 10px 10px;
+  select{
+    margin: 10px 10px;
+    width: 145px;
+    border: 0px;
   }
+
+  option[value~="1"]{
+    color: $one;
+  }
+
   hr{
     height: 0;
     border-style: ridge;
