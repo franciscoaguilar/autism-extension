@@ -1,7 +1,7 @@
 .styling {
-  background-color: #c9fcb5;
-  margin-top: 10px;
-  height: 140px; }
+  background-color: #ceedc2;
+  height: 140px;
+  width: 200px; }
   .styling .custom-select {
     color: #121900; }
   .styling select {
@@ -10,6 +10,8 @@
     border: 0px;
     font-size: 16px;
     font: "Montserrat", sans-serif; }
+  .styling select:hover {
+    border: 1px solid #000000; }
   .styling option[value~="1"] {
     color: #121900; }
   .styling hr {
