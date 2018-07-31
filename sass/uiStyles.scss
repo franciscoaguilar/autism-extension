@@ -3,9 +3,8 @@
 
 .styling{
   background-color: $background-color;
-  // margin-top: 10px;
-  height: 180px;
-  width: 200px;
+  height: 180px; 
+  width: 210px;
 
 
   .custom-select{
@@ -13,31 +12,64 @@
   }
 
   select{
-    margin: 10px 10px;
-    width: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 190px;
     border: 0px;
     font-size: 16px;
-    font: $font;
+    font-family: $font;
   }
   select:hover{
     border: 1px solid #000000;
   }
 
-  option[value~="1"]{
+  .fourteen{
+    font-size: 19px;
+  }
+
+  .sixteen{
+    font-size: 22px;
+  }
+
+  .eighteen{
+    font-size: 24px;
+  }
+
+  .twenty{
+    font-size: 26px;
+  }
+
+  .green{
     color: $one;
+  }
+
+  .blue{
+    color: $two;
+  }
+
+  .grey{
+    color: $three;
   }
 
   hr{
     height: 0;
     border-style: ridge;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+  }
+
+  #changeImage{
+    padding-top: 0px;
   }
 
   button{
     float: right;
     font-size: 16px;
-    font: $font;
+    font-family: $font;
     color: $text-color;
-    margin-right: 10px;
+    margin: 5px 10px 0px 0px;
     -webkit-appearance: button;
 
   }
