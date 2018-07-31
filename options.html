@@ -10,45 +10,50 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/uiStyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link href="options.js" rel="script">
   </head>
   <body>
     <div class="styling">
-      <!-- font size -->
-      <div id="fontSize">
+      <form action="">
+        <!-- font size -->
+        <div id="fontSize">
+          <div class="custom-select">
+            <select id="fontSizeSelection">
+              <option>Select font size:</option>
+              <option>14</option>
+              <option>16</option>
+              <option>18</option>
+              <option>20</option>
+            </select>
+          </div>
+        </div>
+        <!-- font color -->
+        <div id="fontColor">
+          <div class="custom-select width-box"  style="width:200px">
+            <select id="colorSelectionBox">
+              <option class="" value="0">Select font color:</option>
+              <option value="1">green black</option>
+              <option value="2">blue-black</option>
+              <option value="3">deep gray</option>
+              <!-- what other colors??? L: purple-black, purple-gray-->
+            </select>
+          </div>
+        </div>
+        <!-- end font color -->
+      <hr>
+      <!-- color change -->
+      <div>
         <div class="custom-select">
-          <select id="fontSizeSelection">
-            <option>Select font size:</option>
-            <option>14</option>
-            <option>16</option>
-            <option>18</option>
-            <option>20</option>
+          <select id="changeImage">
+            <option id="colorSelectionBox">Select color change:</option>
+            <option>Decrease saturation of images to 95%</option>
+            <option>Decrease brightness of images to 95%</option>
           </select>
+
         </div>
+        <button type="button" name="button">Save</button>
       </div>
-      <!-- font color -->
-      <div id="fontColor">
-        <div class="custom-select width-box"  style="width:200px">
-          <select id="colorSelectionBox">
-            <option class="" value="0">Select font color:</option>
-            <option value="1">green black</option>
-            <option value="2">blue-black</option>
-            <option value="3">deep gray</option>
-            <!-- what other colors??? L: purple-black, purple-gray-->
-          </select>
-        </div>
-      </div>
-      <!-- end font color -->
-    <hr>
-    <!-- color change -->
-    <div>
-      <div class="custom-select">
-        <select id="changeImage">
-          <option id="colorSelectionBox">Select color change:</option>
-          <option>Decrease saturation of images to 95%</option>
-          <option>Decrease brightness of images to 95%</option>
-        </select>
-      </div>
-    </div>
+    </form>
     <!-- end cc -->
     </div>
 
