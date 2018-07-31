@@ -4,7 +4,7 @@
 .styling{
   background-color: $background-color;
   // margin-top: 10px;
-  height: 140px;
+  height: 180px;
   width: 200px;
 
 
@@ -30,6 +30,19 @@
   hr{
     height: 0;
     border-style: ridge;
+  }
+
+  button{
+    float: right;
+    font-size: 16px;
+    font: $font;
+    color: $text-color;
+    margin-right: 10px;
+    -webkit-appearance: button;
+
+  }
+  button:hover{
+    border: 1px solid #000000;
   }
 }
 

@@ -1,6 +1,6 @@
 .styling {
   background-color: #ceedc2;
-  height: 140px;
+  height: 180px;
   width: 200px; }
   .styling .custom-select {
     color: #121900; }
@@ -17,5 +17,14 @@
   .styling hr {
     height: 0;
     border-style: ridge; }
+  .styling button {
+    float: right;
+    font-size: 16px;
+    font: "Montserrat", sans-serif;
+    color: #121900;
+    margin-right: 10px;
+    -webkit-appearance: button; }
+  .styling button:hover {
+    border: 1px solid #000000; }
 
 /*# sourceMappingURL=uiStyles.css.map */
