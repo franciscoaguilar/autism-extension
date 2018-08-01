@@ -13,3 +13,6 @@ chrome.storage.sync.set('changeColors', JSON.stringify(changeColors));
 function() {
   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
 }
+
+// change font Size -- see notes
+document.querySelector('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
