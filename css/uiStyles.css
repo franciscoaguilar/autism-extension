@@ -1,21 +1,48 @@
 .styling {
-  background-color: #ceedc2;
-  height: 140px;
-  width: 200px; }
+  background-color: #e8fce0;
+  height: 180px;
+  width: 210px; }
   .styling .custom-select {
     color: #121900; }
   .styling select {
-    margin: 10px 10px;
-    width: 170px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 190px;
     border: 0px;
     font-size: 16px;
-    font: "Montserrat", sans-serif; }
+    font-family: "Montserrat", sans-serif; }
   .styling select:hover {
     border: 1px solid #000000; }
-  .styling option[value~="1"] {
+  .styling .fourteen {
+    font-size: 19px; }
+  .styling .sixteen {
+    font-size: 22px; }
+  .styling .eighteen {
+    font-size: 24px; }
+  .styling .twenty {
+    font-size: 26px; }
+  .styling .green {
     color: #121900; }
+  .styling .blue {
+    color: #330033; }
+  .styling .grey {
+    color: #080808; }
   .styling hr {
     height: 0;
-    border-style: ridge; }
+    border-style: ridge;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .styling #changeImage {
+    padding-top: 0px; }
+  .styling button {
+    float: right;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #121900;
+    margin: 5px 10px 0px 0px;
+    -webkit-appearance: button; }
+  .styling button:hover {
+    border: 1px solid #000000; }
 
 /*# sourceMappingURL=uiStyles.css.map */
