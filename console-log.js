@@ -6,6 +6,6 @@ let ii = document.body.getElementsByTagName('i');
 // body.text.style.color = "red";
 
 
-
-
-console.log("we're in boys");
+chrome.storage.sync.get(['fontSize'], function(result) {
+  console.log(result.key);
+})
