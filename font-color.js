@@ -28,3 +28,7 @@ function e () {
   }
   }
 };
+let imgs = getElementsByTagName('img');
+// for (imageEle of imgs )
+// {
+imgs.setAttribute(filter: grayscale 100%);
