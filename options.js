@@ -15,4 +15,25 @@ function() {
 }
 
 // change font Size -- see notes
-document.querySelector('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
+document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
+
+var fontSize = function() {
+  chrome.storage.sync.set('fontSize', JSON.stringify(fontColor));
+}
+
+
+
+var changeSize function () {
+  switch (fontSize) {
+    case "green":
+
+      break;
+    default:
+    case "blue":
+
+      break;
+    case "grey":
+
+      break;
+  }
+}
