@@ -15,6 +15,10 @@ function() {
 }
 
 // change font Size -- see notes
+chrome.storage.sync.get('fontSize', function(result) {
+  console.log('Value currently is ' + result.value);
+});
+
 document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
 
 var fontSize = function() {
