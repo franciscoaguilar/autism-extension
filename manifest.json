@@ -1,5 +1,5 @@
 {
-"name": "autism accessibility extension",
+"name": "DeStim",
 "options_page": "options.html",
 
 "permissions": ["activeTab","declarativeContent", "storage", "fontSettings", "webNavigation", "*://*/*"],
