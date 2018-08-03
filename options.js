@@ -38,6 +38,10 @@ function() {
 }
 
 // change font Size -- see notes
+chrome.storage.sync.get('fontSize', function(result) {
+  console.log('Value currently is ' + result.value);
+});
+
 document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
 
 var fontSize = function() {
@@ -48,16 +52,18 @@ var fontSize = function() {
 
 var changeSize function () {
   switch (fontSize) {
-    case "green":
+    case "14":
 
       break;
     default:
-    case "blue":
+    case "16":
 
       break;
-    case "grey":
+    case "18":
+
+      break;
+    case "20":
 
       break;
   }
 }
-

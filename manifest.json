@@ -1,6 +1,7 @@
 {
 "name": "autism accessibility extension",
 "options_page": "options.html",
+
 "permissions": ["activeTab","declarativeContent", "storage", "fontSettings", "webNavigation", "*://*/*"],
 "version": "1.0",
 "description": " extension for making web pages more accessible for autistic people",
@@ -12,7 +13,7 @@
 },
 
 "page_action": {
- "default_popup": "popup.html",
+ "default_popup": "options.html",
  "default_icon": {}
 },
 
