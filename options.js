@@ -52,16 +52,18 @@ var fontSize = function() {
 
 var changeSize function () {
   switch (fontSize) {
-    case "green":
+    case "14":
 
       break;
     default:
-    case "blue":
+    case "16":
 
       break;
-    case "grey":
+    case "18":
+
+      break;
+    case "20":
 
       break;
   }
 }
-
