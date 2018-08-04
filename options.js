@@ -34,33 +34,42 @@ saveButton.addEventListener('click', function(e) {
 });
 
 console.log('i am a banana');
-// 
+//
 // // function() {
-// //   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
-// // }
-// //
-// // change font Size -- see notes
-// var fontSize = chrome.storage.sync.get('fontSize', function(result) {
-//   console.log('Value currently is ' + result.value);
-// });
+//   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
+// }
 //
-// var font = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
-//
+// change font Size -- see notes
+var fontSize = chrome.storage.sync.get('fontSize', function(result) {
+  console.log('Value currently is ' + result.value);
+});
 
-// var changeSize function () {
-//   switch (fontSize) {
-//     case "14":
-//         document.stylesheet.uiStyles.css
-//       break;
-//     default:
-//     case "16":
-//
-//       break;
-//     case "18":
-//
-//       break;
-//     case "20":
-//
-//       break;
-//   };
-// };
+// var
+
+
+
+var changeSize = fontSize; {
+  switch (fontSize) {
+    case "14":
+    var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "19px;");
+      break;
+    default:
+    case "16":
+    var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "22px;");
+      break;
+    case "18":
+    var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "24px;");
+      break;
+    case "20":
+    var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "26px;");
+      break;
+  };
+}
