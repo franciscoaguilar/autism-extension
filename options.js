@@ -33,37 +33,34 @@ saveButton.addEventListener('click', function(e) {
 
 });
 
-function() {
-  chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
-}
+console.log('i am a banana');
+// 
+// // function() {
+// //   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
+// // }
+// //
+// // change font Size -- see notes
+// var fontSize = chrome.storage.sync.get('fontSize', function(result) {
+//   console.log('Value currently is ' + result.value);
+// });
+//
+// var font = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+//
 
-// change font Size -- see notes
-chrome.storage.sync.get('fontSize', function(result) {
-  console.log('Value currently is ' + result.value);
-});
-
-document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
-
-var fontSize = function() {
-  chrome.storage.sync.set('fontSize', JSON.stringify(fontColor));
-}
-
-
-
-var changeSize function () {
-  switch (fontSize) {
-    case "14":
-
-      break;
-    default:
-    case "16":
-
-      break;
-    case "18":
-
-      break;
-    case "20":
-
-      break;
-  }
-}
+// var changeSize function () {
+//   switch (fontSize) {
+//     case "14":
+//         document.stylesheet.uiStyles.css
+//       break;
+//     default:
+//     case "16":
+//
+//       break;
+//     case "18":
+//
+//       break;
+//     case "20":
+//
+//       break;
+//   };
+// };
