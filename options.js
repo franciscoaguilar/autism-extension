@@ -33,37 +33,50 @@ saveButton.addEventListener('click', function(e) {
 
 });
 
-function() {
-  chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
-}
+console.log('i am a banana');
+//
+// // function() {
+//   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
+// }
+//
 
+// catherine
 // change font Size -- see notes
-chrome.storage.sync.get('fontSize', function(result) {
-  console.log('Value currently is ' + result.value);
+
+var fontSize = chrome.storage.sync.get('fontSize', function(result) {
+  console.log('Value currently is ' + result.key);
 });
 
-document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a')
+fontSize.addEventListener("change", fontSize);
+//value is undefined - running too soon
 
-var fontSize = function() {
-  chrome.storage.sync.set('fontSize', JSON.stringify(fontColor));
-}
-
+// var changeFont
 
 
-var changeSize function () {
+
+var changeSize = fontSize; {
   switch (fontSize) {
     case "14":
-
+      var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "19px;");
       break;
     default:
+    console.log('i am running');
     case "16":
-
+      var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "22px;");
       break;
     case "18":
-
+      var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "24px;");
       break;
     case "20":
-
+      var changeFont = document.querySelectorAll('p', 'li', 'ul', 'button', 'table', 'caption', 'span', 'blockquote',  'figure', 'figcaption', 'cite', 'pre', 'ul', 'ol', 'a');
+      changeFont.removeAttribute("font-size", "*");
+      changeFont.setAttribute("font-size", "26px;");
       break;
-  }
+  };
 }
