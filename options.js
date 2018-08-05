@@ -38,5 +38,3 @@ var changeSize function () {
   }
 }
 // font color change code//
-document.getElementbyId(fontColor).style.property= red;
-console.log("I am the queen of france");
