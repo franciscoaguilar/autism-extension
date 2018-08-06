@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="css/uiStyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link href="options.js" rel="script">
   </head>
   <body>
     <div class="styling">
@@ -19,18 +18,20 @@
         <div id="fontSize">
           <div class="custom-select">
             <select id="fontSizeSelection">
-              <option>Select font size:</option>
-              <option class="fourteen">14</option>
-              <option class="sixteen">16</option>
-              <option class="eighteen">18</option>
-              <option class="twenty">20</option>
+
+              <option value="null">Select font size:</option>
+              <option value="14" class="fourteen">14</option>
+              <option value="16" class="sixteen">16</option>
+              <option value="18" class="eighteen">18</option>
+              <option value="20" class="twenty">20</option>
+
             </select>
           </div>
         </div>
         <!-- font color -->
-        <div id="fontColor">
+        <div id="">
           <div class="custom-select width-box"  style="width:200px">
-            <select id="colorSelectionBox">
+            <select id="fontColor">
               <option class="" value="0">Select font color:</option>
               <option value="1" class="green">green black</option>
               <option value="2" class="blue">blue black</option>
@@ -45,18 +46,18 @@
       <div>
         <div class="custom-select">
           <select id="changeImage">
-            <option id="colorSelectionBox">Select color change:</option>
-            <option class="saturation">Decrease saturation of images to 95%</option>
-            <option class="brightness">Decrease brightness of images to 95%</option>
+            <option id="colorSelectionBox">Select image change:</option>
+            <option value = "95" class="saturation">Decrease saturation of images to 95%</option>
+            <option value = "75" class="brightness">Decrease brightness of images to 75%</option>
           </select>
 
         </div>
-        <button type="button" name="button">Save</button>
+        <button type="button" name="button" id="saveButton">Save</button>
       </div>
     </form>
     <!-- end cc -->
     </div>
-
+  <script src="options.js" rel="script"></script>
   </body>
 
 <!-- to do:

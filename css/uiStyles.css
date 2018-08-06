@@ -1,14 +1,14 @@
 .styling {
   background-color: #e8fce0;
   height: 180px;
-  width: 210px; }
+  width: 220px; }
   .styling .custom-select {
     color: #121900; }
   .styling select {
     margin-left: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 190px;
+    width: 200px;
     border: 0px;
     font-size: 16px;
     font-family: "Montserrat", sans-serif; }
@@ -25,7 +25,7 @@
   .styling .green {
     color: #121900; }
   .styling .blue {
-    color: #330033; }
+    color: #000128; }
   .styling .grey {
     color: #080808; }
   .styling hr {

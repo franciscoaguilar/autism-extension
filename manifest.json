@@ -1,6 +1,7 @@
 {
-"name": "autism accessibility extension",
+"name": "DeStim",
 "options_page": "options.html",
+
 "permissions": ["activeTab","declarativeContent", "storage", "fontSettings", "webNavigation", "*://*/*"],
 "version": "1.0",
 "description": " extension for making web pages more accessible for autistic people",
@@ -11,7 +12,7 @@
   "persistent": false
 },
 
-"page_action": {
+"browser_action": {
  "default_popup": "options.html",
  "default_icon": {}
 },
@@ -19,7 +20,8 @@
  "manifest_version": 2,
  "content_scripts": [
    {
-   "js": ["console-log.js", "font-color.js","dim-color.js"],
+   "js": ["console-log.js", "font-color.js","dim-color.js", "options.js"],
+
    "matches": ["https://*/*"],
    "run_at": "document_end",
    "all_frames": true
