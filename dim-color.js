@@ -7,10 +7,13 @@
 // }
 // console.log('dim');
 
-var imgs = document.getElementsByTagName('img');
+let saturation = document.getElementsByClassName('saturation');
+saturation.addEventListener('click', e=>{
+  var imgs = document.getElementsByTagName('img');
 
-for (imageElt of imgs )
-{
-imageElt.style.filter = "brightness(85%)";
-}
-console.log('dim');
+  for (imageElt of imgs )
+  {
+  imageElt.style.filter = "brightness(85%)";
+  }
+  console.log('dim');
+})
