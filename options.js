@@ -2,48 +2,25 @@ let saveButton = document.getElementById('saveButton');
 
 saveButton.addEventListener('click', function(e) {
   e.preventDefault();
-  chrome.storage.clear;
   let fontSize = document.getElementById('fontSizeSelection').value;
   let fontColor = document.getElementById('fontColor').value;
-  let changeImage = document.getElementById('changeImage').value;
-  chrome.storage.sync.set({
-    'fontSizeSetting': fontSize
-  }, function() {
-    chrome.storage.sync.get('fontSizeSetting', function(obj) {
-      console.log(obj);
-    })
-  });;
+  let colorSat = document.getElementById('changeImage').value;
+  if (chrome.storage === undefined || chrome.storage === null || chrome.storage === '') {
+    null
+  } else {
+    chrome.storage.clear
+  };
 
   chrome.storage.sync.set({
-    'fontColorSetting': fontColor
-  }, function() {
-    chrome.storage.sync.get('fontColorSetting', function(obj) {
-      console.log(obj);
-    })
-  });
-
-
-  chrome.storage.sync.set({
-    'changeImageSetting': changeImage
-  }, function() {
-    chrome.storage.sync.get('changeImageSetting', function(obj) {
-      console.log(obj);
-    })
-  });
-
+    'fontSize': fontSize,
+    'fontColor': fontColor,
+    'colorSat': colorSat,
+  })
 });
 
-console.log('i am a banana');
-//
-// // function() {
-//   chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
-// }
-//
 
-// catherine
-// change font Size -- see notes
 
-var fontSize = chrome.storage.sync.get('fontSize').addEventListener("change", function(useFontSize));
+/*var fontSize = chrome.storage.sync.get('fontSize').addEventListener("change", function(useFontSize));
 
 
 
@@ -75,6 +52,8 @@ function useFontSize(fontSize) {
       break;
   };
 }
+
+*/
 // fontSize.addEventListener("change");
 //value is undefined - running too soon. attempt to the function after event listener.
 
