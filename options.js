@@ -38,3 +38,20 @@ var changeSize function () {
   }
 }
 // font color change code//
+// // document.getElementbyId(fontColor).style.property= ;
+// console.log("I am the queen of france");
+var fontColor = function() {
+  chrome.storage.sync.set('fontColor', JSON.stringify(fontColor));
+}
+switch (new fontColor().getfontColor()) {
+  case "green":
+      fontColor= "#121900"
+      console.log("I am the Queenof France");
+    break;
+  case "blue":
+      fontColor = "#000128"
+    break;
+  case "grey":
+      fontColor= "#080808"
+    break;
+}
