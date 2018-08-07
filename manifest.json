@@ -20,7 +20,7 @@
  "manifest_version": 2,
  "content_scripts": [
    {
-   "js": ["console-log.js", "font-color.js","dim-color.js", "options.js"],
+   "js": ["console-log.js", "font-color.js","dim-color.js", "font-size.js"],
 
    "matches": ["https://*/*"],
    "run_at": "document_end",
