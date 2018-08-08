@@ -28,6 +28,12 @@
     color: #000128; }
   .styling .grey {
     color: #080808; }
+  .styling .red {
+    color: #e8554e; }
+  .styling .white {
+    color: #aaaaaa; }
+  .styling .plum {
+    color: #6b0069; }
   .styling hr {
     height: 0;
     border-style: ridge;
