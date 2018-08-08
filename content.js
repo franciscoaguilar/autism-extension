@@ -6,7 +6,7 @@ var settings = new Promise(function(resolve, reject) {
     resolve([fontSize, fontColor, colorSat]);
   })
 })
-
+console.log(settings);
 settings.then((e) => {
   document.body.style.fontSize = e[0] + "px";
   document.body.style.color = e[1];
