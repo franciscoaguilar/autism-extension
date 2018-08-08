@@ -49,7 +49,8 @@ switch (new fontColor().getfontColor()) {
       console.log("I am the Queenof France");
     break;
   case "blue":
-      fontColor = "#000128"
+      fontColor = str.fontColor("#000128"),
+          console.log("I am the Queenof France");
     break;
   case "grey":
       fontColor= "#080808"
