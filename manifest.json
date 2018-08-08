@@ -4,7 +4,14 @@
 "permissions": ["activeTab","declarativeContent", "storage", "fontSettings", "webNavigation", "*://*/*"],
 "version": "1.0",
 "description": " extension for making web pages more accessible for autistic people",
-"icons": { },
+"page_action":{
+  "default_icons": {
+    "16": "img/colors-logo-16.png",
+    "32": "img/colors-logo-32.png",
+    "48": "img/colors-logo-48.png",
+    "128": "img/colors-logo-128.png"
+  }
+},
 
 "background": {
   "scripts": ["background.js"],
