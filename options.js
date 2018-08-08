@@ -5,6 +5,7 @@ saveButton.addEventListener('click', function(e) {
   let fontSize = document.getElementById('fontSizeSelection').value;
   let fontColor = document.getElementById('fontColor').value;
   let colorSat = document.getElementById('changeImage').value;
+  let colorBrightness =document.getElementById('changeImage').value;
   if (chrome.storage === undefined || chrome.storage === null || chrome.storage === '') {
     null
   } else {
@@ -15,6 +16,7 @@ saveButton.addEventListener('click', function(e) {
     'fontSize': fontSize,
     'fontColor': fontColor,
     'colorSat': colorSat,
+    'colorBrightness': colorBrightness, 
   })
 });
 

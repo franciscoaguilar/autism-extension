@@ -14,6 +14,7 @@ settings.then((e) => {
 
   var pTags = document.getElementsByTagName('p');
   var imgs = document.getElementsByTagName('img');
+
   for (let images of imgs) {
     images.style.filter = `saturate(${e[2]}%`;
   }
