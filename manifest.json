@@ -5,7 +5,11 @@
 "permissions": ["activeTab","declarativeContent", "storage", "fontSettings", "webNavigation", "*://*/*"],
 "version": "1.0",
 "description": " extension for making web pages more accessible for autistic people",
-"icons": { },
+"icons": {
+       "16": "img/colors-logo-16.png",
+       "32": "img/colors-logo-32.png",
+       "48": "img/colors-logo-48.png",
+       "128": "img/colors-logo-128.png"},
 
 "background": {
   "scripts": ["background.js"],
@@ -14,7 +18,12 @@
 
 "browser_action": {
  "default_popup": "options.html",
- "default_icon": {}
+ "default_icon": {
+        "16": "img/colors-logo-16.png",
+        "32": "img/colors-logo-32.png",
+        "48": "img/colors-logo-48.png",
+        "128": "img/colors-logo-128.png"
+ }
 },
 
  "manifest_version": 2,
