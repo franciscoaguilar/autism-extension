@@ -14,32 +14,42 @@ var settings = new Promise(function(resolve, reject) {
 })
 console.log(settings);
 
-settings.then(function resolve(e) {
-  switch (settings) {
-    case "19":
-      // var changeFont = document.querySelectorAll('p', 'li', 'ul', 'a');
-      document.body.style.fontSize = e[0] + "px";
-      console.log('ran 19');
-      break;
-    default:
-    case "22":
-      document.querySelectorAll('p', 'li', 'ul') = e[0] + "px";
-      break;
-      console.log();
-    case "24":
-      var changeFont = document.querySelectorAll('p', 'li', 'ul');
-      changeFont.removeAttribute("font-size", "*");
-      changeFont.setAttribute("font-size", "24px;");
-      break;
-    case "26":
-      var changeFont = document.querySelectorAll('p', 'li', 'ul');
-      changeFont.removeAttribute("font-size", "*");
-      changeFont.setAttribute("font-size", "26px;");
-      break;
-  };
+settings.then((e) => {
+  document.body.style.fontSize = e[0] + "px";
+
+  //running it to check for error
 })
-
-
+//
+// settings.then(function resolve(e) {
+//   switch (settings) {
+//     case "19":
+//       // var changeFont = document.querySelectorAll('p', 'li', 'ul', 'a');
+//       document.body.style.fontSize = e[0] + "px";
+//       console.log('ran 19');
+//       break;
+//     default:
+//     case "22":
+//       document.body.style.fontSize = e[0] + "px";
+//       //Uncaught (in promise) TypeError: Cannot read property 'style' of null at resolve (font-size.js:26)
+//
+//       // document.querySelectorAll('p', 'li', 'ul') = e[0] + "px";
+//       //runs an invalid lefthand assignment error
+//       break;
+//       console.log('ran 22');
+//     case "24":
+//       var changeFont = document.querySelectorAll('p', 'li', 'ul');
+//       changeFont.removeAttribute("font-size", "*");
+//       changeFont.setAttribute("font-size", "24px;");
+//       break;
+//     case "26":
+//       var changeFont = document.querySelectorAll('p', 'li', 'ul');
+//       changeFont.removeAttribute("font-size", "*");
+//       changeFont.setAttribute("font-size", "26px;");
+//       break;
+//   };
+// })
+//
+//
 
 
 
