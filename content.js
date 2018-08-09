@@ -1,9 +1,10 @@
 var settings = new Promise(function(resolve, reject) {
-  chrome.storage.sync.get(['fontSize', 'fontColor', 'colorSat'], function(data) {
+  chrome.storage.sync.get(['fontSize', 'fontColor', 'colorSat', 'colorBrightness'], function(data) {
     let fontSize = (data['fontSize']);
     let fontColor = (data['fontColor']);
     let colorSat = (data['colorSat']);
-    resolve([fontSize, fontColor, colorSat]);
+    let colorBrightness = (data['colorBrightness']);
+    resolve([fontSize, fontColor, colorSat, colorBrightness]);
   })
 })
 console.log(settings);
@@ -13,8 +14,12 @@ settings.then((e) => {
 
   var pTags = document.getElementsByTagName('p');
   var imgs = document.getElementsByTagName('img');
+
   for (let images of imgs) {
-    images.style.filter = `saturate(${e[2]}%)`;
+    images.style.filter = `saturate(${e[2]}%`;
+  }
+  for (let images of imgs) {
+    images.style.filter = `brightness(${e[3]}%`;
   }
   for (let pStyle of pTags) {
     pStyle.style.color = e[1];
