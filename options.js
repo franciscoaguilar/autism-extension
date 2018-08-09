@@ -2,6 +2,7 @@ let saveButton = document.getElementById('saveButton');
 
 saveButton.addEventListener('click', function(e) {
   e.preventDefault();
+  
   let fontSize = document.getElementById('fontSizeSelection').value;
   let fontColor = document.getElementById('fontColor').value;
   let colorSat = document.getElementById('changeImage').value;
@@ -10,13 +11,14 @@ saveButton.addEventListener('click', function(e) {
     null
   } else {
     chrome.storage.clear
+
   };
 
   chrome.storage.sync.set({
     'fontSize': fontSize,
     'fontColor': fontColor,
     'colorSat': colorSat,
-    'colorBrightness': colorBrightness, 
+    'colorBrightness': colorBrightness,
   })
 });
 
